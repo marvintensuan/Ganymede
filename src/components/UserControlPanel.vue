@@ -1,12 +1,14 @@
 <template>
-    <h1>Welcome, {{username}}!</h1>
+    <UCPWelcome username="Marvin"/>
 </template>
 
 <script>
+import UCPWelcome from './UCP/UCPWelcome'
+
 export default {
     name: 'UserControlPanel',
-    props: {
-        username: String,
+    components: {
+        UCPWelcome,
     }
 }
 </script>

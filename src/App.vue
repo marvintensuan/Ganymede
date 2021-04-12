@@ -1,15 +1,17 @@
 <template>
   <Header />
-  <h1>Welcome, User!</h1>
+  <UserControlPanel username="Marvin"/>
 </template>
 
 <script>
 import Header from './components/Header'
+import UserControlPanel from './components/UserControlPanel'
 
 export default {
   name: 'App',
   components: {
     Header,
+    UserControlPanel
   }
 }
 </script>

@@ -1,13 +1,15 @@
 <template>
+  <Header />
   <h1>Welcome, User!</h1>
 </template>
 
 <script>
+import Header from './components/Header'
 
 export default {
   name: 'App',
   components: {
-    
+    Header,
   }
 }
 </script>

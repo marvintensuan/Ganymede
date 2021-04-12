@@ -1,6 +1,8 @@
 <template>
-  <Header />
-  <UserControlPanel username="Marvin"/>
+  <div class="container">
+    <Header />
+    <UserControlPanel username="Marvin"/>
+  </div>
 </template>
 
 <script>

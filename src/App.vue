@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <Header />
-    <UserControlPanel username="Marvin"/>
     <router-view></router-view>
     <Footer />
   </div>
@@ -9,14 +8,12 @@
 
 <script>
 import Header from './components/Header'
-import UserControlPanel from './components/UserControlPanel'
 import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
     Header,
-    UserControlPanel,
     Footer
   }
 }

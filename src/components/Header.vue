@@ -10,7 +10,7 @@ export default {
 
 <style scoped>
     header{
-        background-color: #990012;
+        background-color: #004D40;
         color: white;
         font-size: 36px;
     }

@@ -1,5 +1,5 @@
 <template>
-    <UserControlPanel username="Marvin"/>
+    <UserControlPanel v-bind:username='user' />
 </template>
 
 <script>
@@ -9,6 +9,11 @@ export default {
   name: 'Home',
   components: {
     UserControlPanel
+  },
+  data (){
+    return {
+      user: 'Marvin'
+    }
   }
 }
 </script>

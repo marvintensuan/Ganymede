@@ -2,6 +2,7 @@
   <div class="container">
     <Header />
     <UserControlPanel username="Marvin"/>
+    <router-view></router-view>
     <Footer />
   </div>
 </template>

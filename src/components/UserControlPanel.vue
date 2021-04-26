@@ -1,5 +1,5 @@
 <template>
-    <UCPWelcome username="Marvin"/>
+    <UCPWelcome :username='username'/>
 </template>
 
 <script>
@@ -9,6 +9,9 @@ export default {
     name: 'UserControlPanel',
     components: {
         UCPWelcome,
+    },
+    props: {
+        username: String
     }
 }
 </script>

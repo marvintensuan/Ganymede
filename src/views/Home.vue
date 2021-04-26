@@ -1,5 +1,5 @@
 <template>
-    <UserControlPanel v-bind:username='user' />
+    <UserControlPanel :username='user' />
     <EventsPane />
 </template>
 

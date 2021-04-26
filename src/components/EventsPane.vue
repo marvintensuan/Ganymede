@@ -1,11 +1,11 @@
 <template>
     <div class="container rounded" id="events-pane">
         <h2>List of Events</h2>
-        <div class="mb-3" v-for='event in sampleEvents' v-bind:key='event.id'>
+        <div class="mb-3" v-for='event in sampleEvents' :key='event.id'>
             <EventCard
-                v-bind:eventName='event.name'
-                v-bind:eventLocation='event.location'
-                v-bind:eventDate='event.date'
+                :eventName='event.name'
+                :eventLocation='event.location'
+                :eventDate='event.date'
             />
         </div>
     </div>

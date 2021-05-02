@@ -13,6 +13,7 @@
 
 <script>
 import EventCard from './Events/EventCard'
+import axios from 'axios'
 
 export default {
     name: 'EventsPane',
@@ -21,21 +22,14 @@ export default {
     },
     data(){
         return {
-            sampleEvents: [
-                {
-                    id: 1,
-                    name: 'Sample 1',
-                    location: 'Miami',
-                    date: '2021-01-25'
-                },
-                {
-                    id: 2,
-                    name: 'Sample 2',
-                    location: 'Detroit',
-                    date: '2021-02-14'
-                }
-            ]
+            sampleEvents: [],
         }
+    },
+    mounted(){
+        axios
+            .get('http://127.0.0.1:5000/')
+            .then(res => (this.sampleEvents = res['data']))
+            .catch(error => console.log(error))
     }
 }
 </script>

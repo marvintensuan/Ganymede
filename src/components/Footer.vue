@@ -1,5 +1,5 @@
 <template>
-    <footer class="fixed-bottom">
+    <footer>
             <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col"><router-link to='/'>Home</router-link></div>

@@ -23,6 +23,10 @@ export default {
     footer{
         background-color: #004D40;
         color: white;
+        min-width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 15%;
     }
     a{
         color: white;
